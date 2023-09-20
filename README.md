@@ -1,7 +1,7 @@
 # Ender3Pro_Manual_Gantry_Level
 Manual Mechanical Gantry level For Ender 3 Pro running klipper
 
-My sagging x gantry has always been causing me problems and I've been getting tired of leveling it. So I got a dual z stepper kit! I have a Cr-Touch but didn't want to get a new 5 driver main board to take advantage of Klipper-s Z stepper auto-alignment or Marlins (G34). So I was looking for solutions with just my stock Creality 4.2.2 board. I saw projects for other setups utilizing newer drivers such as the UART tmc2209 
+My sagging x gantry has always been causing me problems and I've been getting tired of leveling it. So I got a dual z stepper kit! I have a Cr-Touch but didn't want to get a new 5 driver main board to take advantage of Klipper-s Z stepper auto-alignment or Marlins (G34). So I was looking for solutions with just my stock Creality 4.2.2 board. I saw projects for other setups utilizing newer drivers such as the UART tmc2209 but they take advantage of lower the motor current, which can not be done on the 4.2.2 board. 
 
 I remembered Prusa printers just use a forced mechanical alignment (now depreciated M915 command in Marlin) so wrote up my own gcode script, printed some mechanical endstops and now have a near perfect level x gantry every time. I found it easiest to have the wheels run into the hard stop rather than the gantry itself just due to space constraints and to prevent the bowden tube from being pulled out or pinched by the frame (ask me how i know). But once I had everythign working I could actually see the gantry level itself! (Video coming soon).
 
